@@ -14,4 +14,9 @@ public class TestController {
     public ResponseEntity<String> test(){
         return new ResponseEntity<>("Test Controller", HttpStatus.OK);
     }
+
+    @GetMapping("/check")
+    public ResponseEntity<String> check(){
+        return new ResponseEntity<>("Jenkins Push Test Controller", HttpStatus.OK);
+    }
 }
